@@ -280,16 +280,6 @@ Used for:
 
 ---
 
-# 🤝 Contributing
-
-Contributions are welcome!
-
-```bash
-Fork → Clone → Create Branch → Commit → Push → Pull Request
-```
-
----
-
 # 📜 License
 
 This project is licensed under the MIT License.
