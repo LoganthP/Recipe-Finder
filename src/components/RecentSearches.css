@@ -1,0 +1,46 @@
+.recent-searches {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+
+.recent-searches__label {
+  font-size: 0.8125rem;
+  color: var(--color-subtle);
+}
+
+.recent-searches__pill {
+  font-family: inherit;
+  font-size: 0.8125rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-muted);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.recent-searches__pill:hover {
+  border-color: var(--color-saffron);
+  color: var(--color-saffron-dark);
+  background: var(--color-surface-warm);
+}
+
+.recent-searches__clear {
+  font-family: inherit;
+  font-size: 0.8125rem;
+  color: var(--color-subtle);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  padding: 0.25rem 0.25rem;
+}
+
+.recent-searches__clear:hover {
+  color: var(--color-error);
+}

@@ -1,0 +1,218 @@
+.home__hero {
+  padding: 4rem 0 2.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home__hero h1 {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-text);
+}
+
+.home__hero p {
+  font-size: 1.0625rem;
+  color: var(--color-muted);
+  max-width: 480px;
+}
+
+.home__filters {
+  padding: 1.5rem 0 2rem;
+}
+
+.home__filters-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.home__filters h2 {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-subtle);
+  margin-bottom: 0.75rem;
+}
+
+.home__filter-row {
+  margin-top: 1rem;
+}
+
+.home__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding-bottom: 4rem;
+}
+
+/* Loading skeletons */
+.skeleton-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.skeleton-img {
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(90deg, var(--color-skeleton) 25%, var(--color-skeleton-glow) 50%, var(--color-skeleton) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+}
+
+.skeleton-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skeleton-line {
+  height: 14px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--color-skeleton) 25%, var(--color-skeleton-glow) 50%, var(--color-skeleton) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+}
+
+.skeleton-line.short { width: 55%; }
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Empty / error states */
+.home__state {
+  text-align: center;
+  padding: 4rem 1rem;
+  grid-column: 1 / -1;
+}
+
+.home__state-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.home__state h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.home__state p {
+  color: var(--color-muted);
+  font-size: 0.9375rem;
+}
+
+.error-banner {
+  background: var(--color-error-soft);
+  color: var(--color-error);
+  border-radius: var(--radius-card);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9375rem;
+}
+
+.notice-banner {
+  background: var(--color-surface-amber);
+  color: var(--color-saffron-dark);
+  border-radius: var(--radius-card);
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.home__filters-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.home__filters-label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-subtle);
+}
+
+.home__toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.home__sort {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.home__sort-label {
+  font-size: 0.875rem;
+  color: var(--color-muted);
+}
+
+.home__sort-select {
+  font-family: inherit;
+  font-size: 0.875rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.home__count {
+  font-size: 0.875rem;
+  color: var(--color-subtle);
+}
+
+.home__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 0 4rem;
+}
+
+.home__page-btn {
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.home__page-btn:hover:not(:disabled) {
+  border-color: var(--color-saffron);
+  color: var(--color-saffron-dark);
+}
+
+.home__page-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.home__page-info {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  min-width: 100px;
+  text-align: center;
+}

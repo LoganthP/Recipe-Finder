@@ -1,0 +1,39 @@
+.course-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.25rem 0;
+}
+
+.course-filter__pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--color-border);
+  background: var(--color-surface);
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--color-muted);
+  transition: all 0.15s;
+  cursor: pointer;
+}
+
+.course-filter__pill:hover {
+  border-color: var(--color-saffron);
+  color: var(--color-saffron-dark);
+  background: var(--color-surface-warm);
+}
+
+.course-filter__pill.active {
+  background: var(--color-saffron);
+  border-color: var(--color-saffron);
+  color: #fff;
+  font-weight: 600;
+}
+
+.course-filter__icon {
+  font-size: 0.95rem;
+  line-height: 1;
+}

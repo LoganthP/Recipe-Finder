@@ -1,0 +1,30 @@
+.star-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.star-rating__star {
+  color: var(--color-saffron);
+  font-size: 1.25rem;
+  line-height: 1;
+  padding: 0.1rem;
+  transition: color 0.15s, transform 0.15s;
+}
+
+.star-rating__star:not(:disabled):hover {
+  transform: translateY(-1px);
+}
+
+.star-rating__star:disabled {
+  cursor: default;
+}
+
+.star-rating--small {
+  gap: 0.05rem;
+}
+
+.star-rating--small .star-rating__star {
+  font-size: 0.86rem;
+  padding: 0;
+}

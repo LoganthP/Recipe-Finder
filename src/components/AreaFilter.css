@@ -1,0 +1,29 @@
+.area-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.area-filter__label {
+  font-size: 0.875rem;
+  color: var(--color-muted);
+  white-space: nowrap;
+}
+
+.area-filter__select {
+  font-family: inherit;
+  font-size: 0.875rem;
+  padding: 0.4rem 0.875rem;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  cursor: pointer;
+  transition: border-color 0.15s;
+  min-width: 140px;
+}
+
+.area-filter__select:focus {
+  outline: none;
+  border-color: var(--color-saffron);
+}
